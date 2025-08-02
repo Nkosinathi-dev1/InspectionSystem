@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthService", "AuthService", "{51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Application", "AuthService.Application\AuthService.Application.csproj", "{13A1B261-EE5D-4579-BED5-A9C2BB10315A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Domain", "AuthService.Domain\AuthService.Domain.csproj", "{1BA77A4E-B674-4586-A8C0-01D6651B3443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Contracts", "AuthService.Contracts\AuthService.Contracts.csproj", "{80991296-C021-496B-A08F-46B083FC65DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Infrastructure", "AuthService.Infrastructure\AuthService.Infrastructure.csproj", "{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Persistence", "AuthService.Persistence\AuthService.Persistence.csproj", "{1DAC067B-041F-4422-AC31-6392FAAA1E17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.API", "AuthService.API\AuthService.API.csproj", "{68AD2D44-740F-4043-8913-C476624E030F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A1B261-EE5D-4579-BED5-A9C2BB10315A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A1B261-EE5D-4579-BED5-A9C2BB10315A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A1B261-EE5D-4579-BED5-A9C2BB10315A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A1B261-EE5D-4579-BED5-A9C2BB10315A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA77A4E-B674-4586-A8C0-01D6651B3443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA77A4E-B674-4586-A8C0-01D6651B3443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA77A4E-B674-4586-A8C0-01D6651B3443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA77A4E-B674-4586-A8C0-01D6651B3443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80991296-C021-496B-A08F-46B083FC65DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80991296-C021-496B-A08F-46B083FC65DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80991296-C021-496B-A08F-46B083FC65DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80991296-C021-496B-A08F-46B083FC65DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAC067B-041F-4422-AC31-6392FAAA1E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAC067B-041F-4422-AC31-6392FAAA1E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAC067B-041F-4422-AC31-6392FAAA1E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAC067B-041F-4422-AC31-6392FAAA1E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68AD2D44-740F-4043-8913-C476624E030F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AD2D44-740F-4043-8913-C476624E030F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AD2D44-740F-4043-8913-C476624E030F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AD2D44-740F-4043-8913-C476624E030F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13A1B261-EE5D-4579-BED5-A9C2BB10315A} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+		{1BA77A4E-B674-4586-A8C0-01D6651B3443} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+		{80991296-C021-496B-A08F-46B083FC65DD} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+		{5C452EBE-B8FF-44B8-AEE5-A8317D9E71A6} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+		{1DAC067B-041F-4422-AC31-6392FAAA1E17} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+		{68AD2D44-740F-4043-8913-C476624E030F} = {51BAB9E2-B8DC-47C1-8DD2-F0148789ED82}
+	EndGlobalSection
+EndGlobal
