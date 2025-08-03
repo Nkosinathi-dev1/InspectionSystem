@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InspectionService.Contracts\InspectionService.Contracts.csproj" />
+    <ProjectReference Include="..\InspectionService.Domain\InspectionService.Domain.csproj" />
+    <ProjectReference Include="..\InspectionService.Persistence\InspectionService.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
