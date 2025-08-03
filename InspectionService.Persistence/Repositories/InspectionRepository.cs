@@ -1,6 +1,7 @@
 ﻿using InspectionService.Domain.Entities;
 using InspectionService.Domain.Interfaces;
 using InspectionService.Persistence.Db;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

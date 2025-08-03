@@ -4,3 +4,13 @@ GET {{InspectionService.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{InspectionService.API_HostAddress}}/api/inspection/1a2b3c4d-5e6f-7890-1234-56789abcdef0
+Accept: application/json
+
+###
+GET {{InspectionService_HostAddress}}/api/inspection/1a2b3c4d-5e6f-7890-1234-56789abcdef0
+Accept: application/json
+
+### Get inspection by ID
+GET {{InspectionService.API_HostAddress}}/api/inspection/1a2b3c4d-5e6f-7890-1234-56789abcdef0
+Accept: application/json
