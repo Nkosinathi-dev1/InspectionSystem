@@ -9,6 +9,10 @@ namespace InspectionService.Domain.Interfaces
 {
     public interface IInspectionRepository
     {
-        Task<Inspection> GetByIdAsync(Guid id);
+        Task<Inspection?> GetByIdAsync(Guid id);
+        Task<IEnumerable<Inspection>> GetAllAsync();
+        Task AddAsync(Inspection inspection);
+        Task UpdateAsync(Inspection inspection);
+        Task DeleteAsync(Guid id);
     }
 }

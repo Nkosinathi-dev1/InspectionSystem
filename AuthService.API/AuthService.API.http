@@ -8,8 +8,8 @@ POST {{AuthService.API_HostAddress}}/api/auth/register
 Content-Type: application/json
 
 {
-  "fullName": "John Doe2",
-  "email": "user2@example.com",
+  "fullName": "John Doe3",
+  "email": "user3@example.com",
   "password": "MySecurePass123!",
   "confirmPassword": "MySecurePass123!"
 }
@@ -19,6 +19,6 @@ POST {{AuthService.API_HostAddress}}/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "user2@example.com",
+  "email": "user3@example.com",
   "password": "MySecurePass123!"
 }

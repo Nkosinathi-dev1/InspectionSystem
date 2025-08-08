@@ -19,10 +19,37 @@ namespace InspectionService.Persistence.Repositories
             _context = context;
         }
 
-        public async Task<Inspection> GetByIdAsync(Guid id)
+        public async Task AddAsync(Inspection inspection)
         {
-            return await _context.Inspections.FirstOrDefaultAsync(i => i.Id == id)
-               ?? throw new Exception("Inspection not found");
+            await _context.Inspections.AddAsync(inspection);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(Guid id)
+        {
+            var inspection = await _context.Inspections.FindAsync(id);
+            if (inspection != null)
+            {
+                _context.Inspections.Remove(inspection);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task<IEnumerable<Inspection>> GetAllAsync()
+        {
+            return await _context.Inspections.ToListAsync();
+        }
+
+        public async Task<Inspection?> GetByIdAsync(Guid id)
+        {
+            return await _context.Inspections.FirstOrDefaultAsync(i => i.Id == id);
+               
+        }
+
+        public async Task UpdateAsync(Inspection inspection)
+        {
+            _context.Inspections.Update(inspection);
+            await _context.SaveChangesAsync();
         }
     }
 }

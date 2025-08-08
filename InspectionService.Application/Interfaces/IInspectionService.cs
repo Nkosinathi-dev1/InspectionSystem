@@ -9,6 +9,10 @@ namespace InspectionService.Application.Interfaces
 {
     public interface IInspectionService
     {
-        Task<InspectionDto> GetInspectionAsync(Guid id);
+        Task<InspectionDto?> GetInspectionAsync(Guid id);
+        Task<IEnumerable<InspectionDto>> GetAllInspectionAsync();
+        Task<Guid> CreateInspectionAsync(CreateInspectionDto dto);
+        Task UpdateInspectionAsync(InspectionDto dto);
+        Task DeleteInspectionAsync(Guid id);
     }
 }

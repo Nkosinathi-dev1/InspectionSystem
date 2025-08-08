@@ -8,7 +8,7 @@ GET {{ClientService.API_HostAddress}}/api/clients
 Accept: application/json
 
 ###
-GET {{ClientService.API_HostAddress}}/api/clients/f0c3db71-e75c-48b7-b7a4-83ed994d43c0
+GET {{ClientService.API_HostAddress}}/api/clients/cd6a78bb-200b-4d78-af0c-c1a29a2264fb
 Accept: application/json
 
 ###
@@ -23,15 +23,15 @@ Content-Type: application/json
 
 
 ###
-PUT {{ClientService.API_HostAddress}}/api/clients/123e4567-e89b-12d3-a456-426614174000
+PUT {{ClientService.API_HostAddress}}/api/clients/f0c3db71-e75c-48b7-b7a4-83ed994d43c0
 Content-Type: application/json
 
 {
-  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "id": "f0c3db71-e75c-48b7-b7a4-83ed994d43c0",
   "fullName": "Alice Johnson Updated",
   "email": "alice.johnson@example.com",
   "phoneNumber": "+1234567899"
 }
 
 ###
-DELETE {{ClientService.API_HostAddress}}/api/clients/123e4567-e89b-12d3-a456-426614174000
+DELETE {{ClientService.API_HostAddress}}/api/clients/1b2ccf20-22d5-4cf5-9698-889b5f56d37b
