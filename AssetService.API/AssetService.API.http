@@ -1,0 +1,58 @@
+@AssetService.API_HostAddress = http://localhost:5057
+
+GET {{AssetService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### Register a new asset
+GET {{AssetService.API_HostAddress}}/api/assets
+Accept: application/json
+
+
+### Register a new asset
+POST {{AssetService.API_HostAddress}}/api/assets
+Content-Type: application/json
+
+{
+  "assetType": "Forklift",
+  "identifier": "FL-2025-003",
+  "description": "Forklift #23 in Warehouse A"
+}
+
+###
+
+### Link asset to a client
+PUT {{AssetService.API_HostAddress}}/api/assets/{{assetId}}/link-client
+Content-Type: application/json
+
+
+###
+
+### Get a single asset by ID
+GET {{AssetService.API_HostAddress}}/api/assets/{{assetId}}
+
+###
+
+### Get all assets
+GET {{AssetService.API_HostAddress}}/api/assets
+
+###
+
+### Get inspection history for an asset
+GET {{AssetService.API_HostAddress}}/api/assets/{{assetId}}/inspection-history
+
+###
+
+### Get overdue assets
+GET {{AssetService.API_HostAddress}}/api/assets/overdue
+
+###
+
+### Add inspection record to an asset
+POST {{AssetService.API_HostAddress}}/api/assets/{{assetId}}/inspections
+Content-Type: application/json
+
+{
+
+}
