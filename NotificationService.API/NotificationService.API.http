@@ -1,0 +1,18 @@
+@NotificationService.API_HostAddress = http://localhost:5234
+
+GET {{NotificationService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+###
+POST {{NotificationService.API_HostAddress}}/api/Notifications
+Accept: application/json
+Content-Type: application/json
+
+{
+    "recipient": "john.doe@example.com",
+    "subject": "Welcome to Our Service",
+    "message": "Hello John, thanks for signing up!",
+    "type": "Email"
+}
