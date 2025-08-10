@@ -1,18 +1,18 @@
-@ClientService.API_HostAddress = http://localhost:5011
+@InspectionService.API_HostAddress = http://localhost:5011
 
-GET {{ClientService.API_HostAddress}}/weatherforecast/
+GET {{InspectionService.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
-GET {{ClientService.API_HostAddress}}/api/clients
+GET {{InspectionService.API_HostAddress}}/api/clients
 Accept: application/json
 
 ###
-GET {{ClientService.API_HostAddress}}/api/clients/cd6a78bb-200b-4d78-af0c-c1a29a2264fb
+GET {{InspectionService.API_HostAddress}}/api/clients/cd6a78bb-200b-4d78-af0c-c1a29a2264fb
 Accept: application/json
 
 ###
-POST {{ClientService.API_HostAddress}}/api/clients
+POST {{InspectionService.API_HostAddress}}/api/clients
 Content-Type: application/json
 
 {
@@ -23,7 +23,7 @@ Content-Type: application/json
 
 
 ###
-PUT {{ClientService.API_HostAddress}}/api/clients/f0c3db71-e75c-48b7-b7a4-83ed994d43c0
+PUT {{InspectionService.API_HostAddress}}/api/clients/f0c3db71-e75c-48b7-b7a4-83ed994d43c0
 Content-Type: application/json
 
 {
@@ -34,4 +34,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{ClientService.API_HostAddress}}/api/clients/1b2ccf20-22d5-4cf5-9698-889b5f56d37b
+DELETE {{InspectionService.API_HostAddress}}/api/clients/1b2ccf20-22d5-4cf5-9698-889b5f56d37b
